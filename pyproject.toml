@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sensei"
+version = "0.1.0"
+description = "Structured accountability companion bot — single-user v1"
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot[job-queue]>=21.0",
+    "google-genai>=0.3.0",
+    "apscheduler>=3.10",
+    "sqlalchemy>=2.0",
+    "aiosqlite>=0.19",
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "python-frontmatter>=1.1",
+    "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "syrupy>=4.6",
+]
+
+[project.scripts]
+sensei = "sensei.main:run"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sensei"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

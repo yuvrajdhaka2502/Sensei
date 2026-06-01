@@ -1,4 +1,4 @@
-# AI Lifestyle Guru — Concept Analysis & Architecture
+# Sensei — Concept Analysis & Architecture
 
 ## 1. Idea Refinement & Naming
 
@@ -6,7 +6,7 @@
 This is a **structured accountability companion** — an AI that acts as a personal coach with persistent memory, conducting daily check-ins to help you plan, execute, and reflect on your goals. The Obsidian integration makes your entire journey searchable, linkable, and reviewable.
 
 ### Name Suggestions
-"Lifestyle Guru" is a bit broad. Some alternatives that better capture the daily-check-in + accountability angle:
+**Name chosen: Sensei.** Alternatives that were considered:
 
 | Name | Vibe |
 |------|------|
@@ -203,7 +203,7 @@ graph TB
 ## 4. File Structure (Obsidian Vault)
 
 ```
-📁 lifestyle-guru/
+📁 sensei/
 ├── 📄 _user_profile.md          # Who the user is, goals, preferences
 ├── 📄 _ai_notes.md              # AI's coaching notes (what works/doesn't)
 ├── 📄 _pending_tasks.md         # Carried-over incomplete tasks
